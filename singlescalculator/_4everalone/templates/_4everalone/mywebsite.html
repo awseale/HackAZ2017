@@ -1,0 +1,107 @@
+<html>
+    <head>
+      <title>4EverAlone</title>
+	{% load staticfiles %}
+    	  <link rel='stylesheet' href="% static 'css/bootstrap.min/css'%" tpye='text/css'/>
+    </head>
+
+    <body>
+      <h1>4EvrAlone</h1>
+
+      <fieldset>
+      <legend>Time Outside</legend>
+      <p>
+         <input type = "radio"
+                name = "radSize"
+                id = "sizeSmall"
+                value = "small"
+                checked = "checked" />
+         <label for = "hourOne">1-3 hours</label>
+         <input type = "radio"
+                name = "radSize"
+                id = "sizeMed"
+                value = "medium" />
+         <label for = "sizeMed">3-5 hours</label>
+         <input type = "radio"
+                name = "radSize"
+                id = "sizeLarge"
+                value = "large" />
+         <label for = "sizeLarge">6+</label>
+       </p>
+
+     </fieldset>
+     <fieldset>
+     <legend>Website Usage</legend>
+     <p>
+
+        <form action="demo_form.asp" method="get">
+        <input type="checkbox" name="website" value=""> Facebook<br>
+        <input type="checkbox" name="website" value=""> Insta<br>
+        <input type="checkbox" name="website" value=""> Reddit<br>
+        <input type="checkbox" name="website" value=""> 4Chan<br>
+        <input type="checkbox" name="website" value=""> Twitter<br>
+        <input type="checkbox" name="website" value=""> Buzzfeed<br>
+        <input type="checkbox" name="website" value=""> Tumblr<br>
+        <input type="checkbox" name="website" value=""> LinkedIn<br>
+        <input type="checkbox" name="website" value=""> Imgur<br>
+        </form>
+
+     </fieldset>
+
+     <fieldset>
+     <legend>Hours online</legend>
+
+       <select name="hoursPerDay" size="8">
+         <option> >1hr</option>
+         <option> 2hr</option>
+         <option> 3hr</option>
+         <option> 4hr</option>
+         <option> 5hr</option>
+         <option> 6hr</option>
+         <option> 7hr</option>
+         <option> 8+hr</option>
+       </select>
+     </fieldset>
+
+     <fieldset>
+     <legend>Hours of exercise per day</legend>
+     <p>
+       <input type= "radio"
+              name= "radHours"
+              id= "oneHour"
+              value= "lessThanOne"/>
+       <label for= "oneHour"> 1hr</label>
+       <input type= "radio"
+              name= "radHours"
+              id= "twoHour"
+              value= "twoHours" />
+       <label for= "twoHour"> 2hr</label>
+       <input type= "radio"
+              name= "radHours"
+              id= "threeHour"
+              value= "threeHours" />
+       <label for= "threeHour"> 3hr</label>
+       <input type= "radio"
+              name= "radHours"
+              id= "fourHour"
+              value= "fourHours" />
+       <label for= "fourHour"> 4hr</label>
+
+     </fieldset>
+
+     <fieldset>
+     <legend>Meme folder?</legend>
+     <p>
+       <input type= "radio"
+              name= "memeRad"
+              id= "memeY"
+              value= "memeYes" />
+       <label for= "memeY"> Y </label>
+       <input type= "radio"
+              name= "memRad"
+              id= "memeN"
+              value= "memeNo" />
+       <label for= "memeN"> N </label>
+
+    </body>
+</html>
