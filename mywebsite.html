@@ -46,6 +46,60 @@
 
      </fieldset>
 
-      <p><a href="http://blackpeoplemeet.com">NUT</a></p>
+     <fieldset>
+     <legend>Hours online</legend>
+
+       <select name="hoursPerDay" size="8">
+         <option> >1hr</option>
+         <option> 2hr</option>
+         <option> 3hr</option>
+         <option> 4hr</option>
+         <option> 5hr</option>
+         <option> 6hr</option>
+         <option> 7hr</option>
+         <option> 8+hr</option>
+       </select>
+     </fieldset>
+
+     <fieldset>
+     <legend>Hours of exercise per day</legend>
+     <p>
+       <input type= "radio"
+              name= "radHours"
+              id= "oneHour"
+              value= "lessThanOne"/>
+       <label for= "oneHour"> 1hr</label>
+       <input type= "radio"
+              name= "radHours"
+              id= "twoHour"
+              value= "twoHours" />
+       <label for= "twoHour"> 2hr</label>
+       <input type= "radio"
+              name= "radHours"
+              id= "threeHour"
+              value= "threeHours" />
+       <label for= "threeHour"> 3hr</label>
+       <input type= "radio"
+              name= "radHours"
+              id= "fourHour"
+              value= "fourHours" />
+       <label for= "fourHour"> 4hr</label>
+
+     </fieldset>
+
+     <fieldset>
+     <legend>Meme folder?</legend>
+     <p>
+       <input type= "radio"
+              name= "memeRad"
+              id= "memeY"
+              value= "memeYes" />
+       <label for= "memeY"> Y </label>
+       <input type= "radio"
+              name= "memRad"
+              id= "memeN"
+              value= "memeNo" />
+       <label for= "memeN"> N </label>
+
     </body>
 </html>
