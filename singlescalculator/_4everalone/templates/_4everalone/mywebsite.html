@@ -1,6 +1,8 @@
 <html>
     <head>
       <title>4EverAlone</title>
+	{% load staticfiles %}
+    	  <link rel='stylesheet' href="% static 'css/bootstrap.min/css'%" tpye='text/css'/>
     </head>
 
     <body>
@@ -9,25 +11,22 @@
       <fieldset>
       <legend>Time Outside</legend>
       <p>
-        <form action= "models.py">
          <input type = "radio"
                 name = "radSize"
-                id = "sizeOne"
-                value = "one"
+                id = "sizeSmall"
+                value = "small"
                 checked = "checked" />
-         <label for = "sizeOne">1-3 hours</label>
+         <label for = "hourOne">1-3 hours</label>
          <input type = "radio"
                 name = "radSize"
-                id = "sizeThree"
-                value = "three" />
-         <label for = "sizeThree">3-5 hours</label>
+                id = "sizeMed"
+                value = "medium" />
+         <label for = "sizeMed">3-5 hours</label>
          <input type = "radio"
                 name = "radSize"
-                id = "sizeSix"
-                value = "six" />
-         <label for = "sizeSix">6+</label>
-         <input type= "submit" value= "Submit">
-       </form>
+                id = "sizeLarge"
+                value = "large" />
+         <label for = "sizeLarge">6+</label>
        </p>
 
      </fieldset>
@@ -35,42 +34,38 @@
      <legend>Website Usage</legend>
      <p>
 
-        <form action="models.py" method="get">
-        <input type="checkbox" name="website" value="1"> Facebook<br>
-        <input type="checkbox" name="website" value="1"> Insta<br>
-        <input type="checkbox" name="website" value="3"> Reddit<br>
-        <input type="checkbox" name="website" value="10"> 4Chan<br>
-        <input type="checkbox" name="website" value="1"> Twitter<br>
-        <input type="checkbox" name="website" value="4"> Buzzfeed<br>
-        <input type="checkbox" name="website" value="6"> Tumblr<br>
-        <input type="checkbox" name="website" value="2"> LinkedIn<br>
-        <input type="checkbox" name="website" value="3"> Imgur<br>
-        <input type= "submit" value= "Submit">
+        <form action="demo_form.asp" method="get">
+        <input type="checkbox" name="website" value=""> Facebook<br>
+        <input type="checkbox" name="website" value=""> Insta<br>
+        <input type="checkbox" name="website" value=""> Reddit<br>
+        <input type="checkbox" name="website" value=""> 4Chan<br>
+        <input type="checkbox" name="website" value=""> Twitter<br>
+        <input type="checkbox" name="website" value=""> Buzzfeed<br>
+        <input type="checkbox" name="website" value=""> Tumblr<br>
+        <input type="checkbox" name="website" value=""> LinkedIn<br>
+        <input type="checkbox" name="website" value=""> Imgur<br>
         </form>
 
      </fieldset>
 
      <fieldset>
      <legend>Hours online</legend>
-       <form action= "models.py" method= "get">
+
        <select name="hoursPerDay" size="8">
-         <option value=1>1hr</option>
-         <option value=2>2hr</option>
-         <option value=3>3hr</option>
-         <option value=4> 4hr</option>
-         <option value=5> 5hr</option>
-         <option value=6> 6hr</option>
-         <option value=7> 7hr</option>
-         <option value=8> 8+hr</option>
+         <option> >1hr</option>
+         <option> 2hr</option>
+         <option> 3hr</option>
+         <option> 4hr</option>
+         <option> 5hr</option>
+         <option> 6hr</option>
+         <option> 7hr</option>
+         <option> 8+hr</option>
        </select>
-       <input type= "submit" value= "Submit">
-     </form>
      </fieldset>
 
      <fieldset>
      <legend>Hours of exercise per day</legend>
      <p>
-       <form action= "models.py">
        <input type= "radio"
               name= "radHours"
               id= "oneHour"
@@ -91,15 +86,12 @@
               id= "fourHour"
               value= "fourHours" />
        <label for= "fourHour"> 4hr</label>
-       <input type= "submit" value="Submit" >
-     </form>
 
      </fieldset>
 
      <fieldset>
      <legend>Meme folder?</legend>
      <p>
-       <form action = "models.py">
        <input type= "radio"
               name= "memeRad"
               id= "memeY"
@@ -110,8 +102,6 @@
               id= "memeN"
               value= "memeNo" />
        <label for= "memeN"> N </label>
-       <input type= "submit" value= "Submit" >
-     </form>
 
     </body>
 </html>
